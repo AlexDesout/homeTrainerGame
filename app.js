@@ -1,12 +1,12 @@
-// 🔒 Vérification login
-const isLogged = localStorage.getItem("isLogged");
+// // 🔒 Vérification login
+// const isLogged = localStorage.getItem("isLogged");
 
-if (isLogged !== "true") {
-  console.warn("Accès refusé - pas connecté");
+// if (isLogged !== "true") {
+//   console.warn("Accès refusé - pas connecté");
 
-  // Redirection vers login
-  window.location.href = "index.html";
-}
+//   // Redirection vers login
+//   window.location.href = "index.html";
+// }
 
 // Initialisation : Configure le canvas, le contexte 2D, les dimensions, les éléments DOM pour les contrôles (vitesse et direction), et définit l'objet bike avec position, angle et empattement.
 const canvas = document.getElementById("canvas");

@@ -29,13 +29,6 @@ ws.onmessage = function (event) {
             return; // on stop ici pour éviter les autres traitements
         }
 
-        if (data.speed !== undefined) {
-            speedInput.value = data.speed;
-            console.log("Vitesse mise à jour à:", data.speed);
-        } else {
-            console.warn("Message sans champ reconnu:", data);
-        }
-
     } catch (e) {
         // Si ce n'est pas JSON
         const value = parseFloat(event.data);
